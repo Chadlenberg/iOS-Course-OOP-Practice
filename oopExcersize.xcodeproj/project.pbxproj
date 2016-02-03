@@ -14,6 +14,8 @@
 		3AEDA86D1C61C11C005BEEE2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AEDA86B1C61C11C005BEEE2 /* LaunchScreen.storyboard */; };
 		3AEDA8781C61C11C005BEEE2 /* oopExcersizeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AEDA8771C61C11C005BEEE2 /* oopExcersizeTests.swift */; };
 		3AEDA8831C61C11C005BEEE2 /* oopExcersizeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AEDA8821C61C11C005BEEE2 /* oopExcersizeUITests.swift */; };
+		3AEDA8931C61C32E005BEEE2 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AEDA8921C61C32E005BEEE2 /* Character.swift */; };
+		3AEDA8951C61C6EE005BEEE2 /* Player1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AEDA8941C61C6EE005BEEE2 /* Player1.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		3AEDA87E1C61C11C005BEEE2 /* oopExcersizeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = oopExcersizeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AEDA8821C61C11C005BEEE2 /* oopExcersizeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = oopExcersizeUITests.swift; sourceTree = "<group>"; };
 		3AEDA8841C61C11C005BEEE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3AEDA8921C61C32E005BEEE2 /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		3AEDA8941C61C6EE005BEEE2 /* Player1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player1.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,8 @@
 				3AEDA8691C61C11C005BEEE2 /* Assets.xcassets */,
 				3AEDA86B1C61C11C005BEEE2 /* LaunchScreen.storyboard */,
 				3AEDA86E1C61C11C005BEEE2 /* Info.plist */,
+				3AEDA8921C61C32E005BEEE2 /* Character.swift */,
+				3AEDA8941C61C6EE005BEEE2 /* Player1.swift */,
 			);
 			path = oopExcersize;
 			sourceTree = "<group>";
@@ -258,6 +264,8 @@
 			files = (
 				3AEDA8651C61C11C005BEEE2 /* ViewController.swift in Sources */,
 				3AEDA8631C61C11C005BEEE2 /* AppDelegate.swift in Sources */,
+				3AEDA8951C61C6EE005BEEE2 /* Player1.swift in Sources */,
+				3AEDA8931C61C32E005BEEE2 /* Character.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
