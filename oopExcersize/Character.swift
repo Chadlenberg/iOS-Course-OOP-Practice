@@ -11,7 +11,7 @@ import Foundation
 class Character {
     private var _hp: Int = 100
     private var _attackPwr: Int = 12
-    private var _name:String = "Player"
+    var name:String = "Player"
     
     var hp:Int {
         get {
@@ -19,11 +19,6 @@ class Character {
         }
     }
     
-    var name:String {
-        get {
-            return _name
-        }
-    }
     
     var attackPwr: Int {
         get {
@@ -52,3 +47,4 @@ class Character {
         return true
     }
 }
+
