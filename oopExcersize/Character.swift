@@ -11,7 +11,16 @@ import Foundation
 class Character {
     private var _hp: Int = 100
     private var _attackPwr: Int = 12
-    var name:String = "Player"
+    private var _name:String = "Player"
+    
+    var name:String {
+        get{
+            return _name
+        }
+        set {
+            _name = newValue
+        }
+    }
     
     var hp:Int {
         get {
@@ -36,15 +45,26 @@ class Character {
         }
     }
     
-    init (startingHp: Int, startingAttackPwr: Int) {
+    init (startingHp: Int, startingAttackPwr: Int, name: String) {
         self._hp = startingHp
         self._attackPwr = startingAttackPwr
+        self._name = name 
     }
     
     func attemptAttack(attackPwr: Int) -> Bool {
         self._hp -= attackPwr
         
         return true
+    }
+    
+    func defendAttack(attackPwr: Int) {
+        self._hp -= attackPwr
+    }
+
+    
+    
+    convenience init (name: String, Hp: Int, AttackPwr: Int) {
+        self.init(startingHp: Hp, startingAttackPwr: AttackPwr, name: name)
     }
 }
 

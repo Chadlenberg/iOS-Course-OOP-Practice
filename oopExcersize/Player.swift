@@ -11,8 +11,6 @@ import Foundation
 
 class Player: Character {
     
-    func setplayername(name: String) {
-        self.name = name
-    }
+    
 }
 

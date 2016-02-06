@@ -15,33 +15,59 @@ class ViewController: UIViewController {
     @IBOutlet weak var Hero: UIImageView!
     @IBOutlet weak var statLbl: UILabel!
      @IBOutlet weak var enemyNameField: UITextField!
-    
+    @IBOutlet weak var doneBtnLbl: UILabel!
     @IBOutlet weak var heroNameField: UITextField!
     
-    var hero: Player!
-    var enemy: Player!
+    @IBOutlet weak var heroNameBtn: UIButton!
+    @IBOutlet weak var EnemyNameBtn: UIButton!
+    var hero: Character!
+    var enemy: Character!
     //UI Interactions
+    
+   
+    @IBAction func onEnemySubmitNamePressed(sender: AnyObject) {
+    }
+    
+    @IBAction func onHeroSubmitNamePressed(sender: UIButton) {
+        heroNameBtn.hidden = true
+        heroNameBtn.hidden = true
+        doneBtnLbl.hidden = true
+        heroNameField.hidden = true
+        heroNameField.text = ""
+    }
+    
     @IBAction func OnHeroAttackPressed(sender: AnyObject) {
-       hero.attemptAttack(20)
-        statLbl.text = " \(enemy.name)'s HP is reduced tp \(enemy.hp)!"
+        
+            Attack(hero, defender: enemy)
+    
     
     }
     
    
     @IBAction func onEnemyAttackPressed(sender: AnyObject) {
+        
+            Attack(enemy, defender: hero)
+        
+    }
+    func Attack(attacker: Character, defender: Character) {
+        defender.defendAttack(attacker.attackPwr)
+        statLbl.text = "\(attacker.name) has hit \(defender.name) for \(attacker.attackPwr) HP! \n \(defender.name)'s hp is now \(defender.hp)"
     }
     
-    
-    func nameCharacter(player: Player) {
+    func setName(player: Character) {
+        doneBtnLbl.hidden = false
+        heroNameBtn.hidden = false
         heroNameField.hidden = false
-        if heroNameField.text! != "" {
-            player.name = heroNameField.text!
-            }
+        
     }
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-      var hero = 
+        hero = Character(name: "Player 2", Hp: 100, AttackPwr: 13)
+        enemy = Character(name: "Player 1", Hp: 100, AttackPwr: 13)
+     
     }
 
     override func didReceiveMemoryWarning() {
